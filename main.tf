@@ -20,11 +20,11 @@ terraform {
     organization = "morningstardemo"
 
     workspaces {
-      name = "dev"
+      name = "morningstar-terraform"
     }
   }
 }
 
 resource "aws_s3_bucket" "b1" {
-  bucket = "morningstar-cloudbucket"
+  bucket = "morningstar-cloudbucket12"
 }
