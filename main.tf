@@ -37,10 +37,10 @@ terraform {
     }
   }
 }
-resource "aws_s3_bucket" "b1" {
-  bucket = "morningstar-cloudbucket12"
+resource "aws_s3_bucket" "b11" {
+  bucket = "morningstar-cloudbucket111"
 }
 
-resource "aws_s3_bucket" "b2" {
-  bucket = "morningstar-cloudbucket11"
+resource "aws_s3_bucket" "b12" {
+  bucket = "morningstar-cloudbucket112"
 }
