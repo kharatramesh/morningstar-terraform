@@ -14,17 +14,33 @@ provider "aws" {
   
 }
 
+# terraform {
+#   cloud {
+
+#     organization = "morningstardemo"
+
+#     workspaces {
+#       name = "morningstar-terraform"
+#     }
+#   }
+# }
+
+
 terraform {
   cloud {
-
     organization = "morningstardemo"
+    ## Required for Terraform Enterprise; Defaults to app.terraform.io for Terraform Cloud
+    hostname = "app.terraform.io"
 
     workspaces {
-      name = "morningstar-terraform"
+      tags = ["morningstar"]
     }
   }
 }
-
 resource "aws_s3_bucket" "b1" {
   bucket = "morningstar-cloudbucket12"
+}
+
+resource "aws_s3_bucket" "b2" {
+  bucket = "morningstar-cloudbucket11"
 }
