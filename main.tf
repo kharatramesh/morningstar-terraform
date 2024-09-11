@@ -17,7 +17,7 @@ provider "aws" {
 # terraform {
 #   cloud {
 
-#     organization = "morningstardemo"
+#     organization = "morningstardemo2"
 
 #     workspaces {
 #       name = "morningstar-terraform"
@@ -28,7 +28,7 @@ provider "aws" {
 
 terraform {
   cloud {
-    organization = "morningstardemo"
+    organization = "morningstardemo2"
     ## Required for Terraform Enterprise; Defaults to app.terraform.io for Terraform Cloud
     hostname = "app.terraform.io"
 
