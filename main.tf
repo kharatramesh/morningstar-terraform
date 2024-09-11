@@ -37,7 +37,7 @@ terraform {
     }
   }
 }
-resource "aws_s3_bucket" "b345" {
+resource "aws_s3_bucket" "b3415" {
   bucket = "morningstar-cloudbucket31431"
 }
 
