@@ -41,6 +41,6 @@ resource "aws_s3_bucket" "b34125" {
   bucket = "morningstar-cloudbucket31431"
 }
 
-resource "aws_s3_bucket" "b1224" {
+resource "aws_s3_bucket" "b12324" {
   bucket = "morningstar-cloudbucket5121"
 }
